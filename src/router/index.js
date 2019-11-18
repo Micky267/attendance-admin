@@ -23,17 +23,19 @@ const routes = [
   {
     path: '/echat-attend',
     name: 'echatAttend',
-    component: () => import('../views/EchatAttend.vue')
+    component:  () => import(/* webpackChunkName: 'ImportFuncDemo' */ '../views/EchatAttend.vue')
   },
   {
     path: '/apply-disposed',
     name: 'ApplyDisposed',
-    component: () => import('../views/ApplyDisposed.vue')
+    component:  () => import(/* webpackChunkName: 'ImportFuncDemo' */ '../views/ApplyDisposed.vue')
+    // component: () => import('../views/ApplyDisposed.vue')
   },
   {
     path: '/apply-undispose',
     name: 'ApplyUndispose',
-    component: () => import('../views/ApplyUndispose.vue')
+    component:  () => import(/* webpackChunkName: 'ImportFuncDemo' */ '../views/ApplyUndispose.vue')
+    // component: () => import('../views/ApplyUndispose.vue')
   },
 ]
 
